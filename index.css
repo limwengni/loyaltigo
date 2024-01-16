@@ -1,0 +1,504 @@
+/* Body */
+body {
+  background-color:ghostwhite;
+}
+
+.content{
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+   opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+}
+
+.container1{
+    width: 100%;
+    padding: 1rem;
+    text-align: justify;
+    padding: 50px;
+}
+
+.container2{
+    background-color: #398378;
+    color: ghostwhite;
+    width: 100%;
+    padding: 1rem;
+    text-align: justify;
+    padding: 50px;
+}
+
+/* .container3{
+    background-color: #40998a;
+    color: ghostwhite;
+    width: 100%;
+    padding: 1rem;
+    text-align: justify;
+    padding: 50px;
+} */
+
+/* About Us */
+
+.aboutUs{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content : space-between;
+  margin-bottom 50px;
+}
+
+.aboutVid{
+  align-items: center;
+  justify-content: center;
+  justify-content : space-between;
+  margin-bottom 50px;
+}
+
+.text-start{
+  background-color: #398378;
+  border: 10px;
+  border-radius: 6px;
+  margin-left : 60px;
+  margin-right :40px;
+  
+}
+
+.text-start2{
+  background-color: ghostwhite;
+  border: 10px;
+  border-radius: 6px;
+  margin-left: 60px;
+  margin-right:40px;
+}
+
+.wallpaper{
+  width:450px;
+  height:250px;
+  margin-left : 60px;
+  border-radius: 25px;
+  background: url(images/aboutUs.jpeg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+/* Footer */
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: RGB(42,62,52);
+}
+
+/* Headers*/
+.ptitle{
+    padding-top :20px;
+    font-size: 32px;
+    margin-bottom: 48px;
+    margin-top : 39px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align : center;
+}
+.ptitle::after{
+   content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #398378;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.ptitle2{
+    padding-top :20px;
+    font-size: 32px;
+    margin-bottom: 48px;
+    margin-top : 39px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align : center;
+}
+.ptitle2::after{
+   content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: ghostwhite;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.ptitle3{
+    padding-top :20px;
+    font-size: 32px;
+    margin-bottom: 48px;
+    margin-top : 39px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align : center;
+}
+
+/*Pricing*/
+.pricing{
+  width : 300px;
+  border-radius : 25px;
+  box-shadow : 0 0 5px rgba(0,0,0,0.2);
+  overflow : hidden;
+  font-family : sans-serif;
+  font-size : 16px;
+  line-height : 1.5;
+  color : #555555;
+  font-family: 'Lato', sans-serif;
+  margin : 15px;
+  margin-bottom : 60px;
+}
+.pricing--highlighted{
+  box-shadow : 0 0 15px rgba(0,0,0,0.4);
+  transform: scale(1.05);
+} 
+
+.pricing-header{
+  padding  :25px;
+  background : rgb(57,131,120);
+  color : #ffffff;
+}
+
+.pricing-title,
+.pricing-summary{
+  margin : 0;
+  text-align: center;
+}
+
+.pricing-title{
+  font-size: 1.5em;
+  font-weight: 400;
+  color : #ffffff;
+}
+
+.pricing-summary{
+  font-size 1em;
+  font-weight : 300;
+  color : #ffffff;
+}
+  
+.pricing-description{
+  padding:25px;
+}
+
+.pricing-list{
+  padding:0;
+  margin:0;
+}
+  
+.pricing-feature{
+  list-style: none;
+  margin : 0;
+  padding-left  : 25px;
+  position : relative;
+  font-size : 0.9em;
+}
+  
+.pricing-feature:not(:last-child){
+   margin-bottom  :0.5em;
+}
+  
+.pricing-feature:before{
+  content: "\2714";
+  color :  rgb(57,131,120);
+  position : absolute;
+  left: 0;
+}
+  .pricing-action{
+    padding:25px;
+    border-top: 3px solid #eeeeee;
+    display: flex;
+    flex-direction : column;
+  }
+
+  .pricing-button{
+    display: inline-block;
+    margin: 15px auto;
+    padding : 8px 20px;
+    text-decoration : none;
+    color: #009578;
+    background : #ffffff;
+    border-radius : 5px;
+    border: 1px solid #009578;
+    text-transform : uppercase;
+    letter-spacing : 0.02em;
+    font-weight : bold;
+  }
+
+.pricing-button:hover{
+  background: #009578;
+  color : #ffffff;
+}
+  .pricing-cost{
+    margin :0;
+    text-align : center;
+    font-size : 2em;
+  }
+  .pricing-text{
+    font-size : 0.9em;
+    text-align : center;
+    margin : 0 0 10px 0;
+  }
+  .pricing-special-text{
+    padding : 10px;
+    text-align : center;
+    font-weight  :bold;
+    color  : #ffffff;
+    background : #007c64;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2) inset;
+  }
+  .pricing-container{
+    display : flex;
+    align-items :  center;
+    justify-content : center;
+    padding : 10px;
+  }
+
+/* Contact Form */
+#message {
+  resize: none;
+  width: 100%;
+}
+
+input{
+  width: 100%;
+}
+
+input, #message{
+  outline: none;
+  border: 2px solid ghostwhite;
+  background-color: ghostwhite;
+  border-radius: 5px;
+}
+
+.form{
+  margin: 0 auto; 
+  width: 480px;
+}
+
+  .submit{
+    display: inline-block;
+    float: right;
+    margin: 15px auto;
+    padding : 8px 20px;
+    text-decoration : none;
+    color: #009578;
+    background : #ffffff;
+    border-radius : 5px;
+    border: 1px solid #009578;
+    text-transform : uppercase;
+    letter-spacing : 0.02em;
+    font-weight : bold;
+  }
+
+/*button to top page*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(226, 113, 91); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+/*shrink the about us*/
+@media (max-width:1000px){
+  
+  .aboutUs{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content : space-between;
+  margin-bottom 50px;
+  flex-direction: column;
+  }
+
+.aboutVid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content : space-between;
+  margin-bottom 50px;
+  flex-direction: column;
+}
+  
+  .wallpaper{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     background-repeat: none;
+  }
+
+  .aboutUs-img{
+     padding-bottom: 10px;
+  }
+
+  .text-start{
+    margin-left: 40px;
+  }
+
+  .memberCard, .pay, .point{
+    width:auto;
+    height: auto;
+  }
+
+  .pricing-action{
+    padding:6px;
+  }
+
+  .pricing-title{
+    font-size: 11px;
+  }
+
+  .pricing-summary{
+    font-size: 20px;
+  }
+  
+  .pricing{
+    font-size: 12px;
+  }
+
+  #contactForm{
+    width: 100%;
+  }
+  
+}
+
+/*FOR PHONE*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content : space-between;
+    flex-direction: row;
+  }
+  
+  .aboutUs-img{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .wallpaper{
+    width: 280px;
+    height: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .ptitle, .ptitle2{
+    font-size: 22px;
+  }
+
+  video{
+    width: 300px;
+    height: 150px;
+  }
+
+  .text-start{
+    margin: 10px;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .memberCard, .pay, .point{
+    width:auto;
+    height: auto;
+  }
+
+  td p{
+    font-size: 15px;
+  }
+
+  td{
+    display: table-row;
+  }
+
+  .pricing-container{
+    display: table;
+    height: 100%;
+    width: 80%;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .pricing-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content : space-between;
+    margin-bottom 50px;
+    flex-direction: column;
+  }
+
+  .pricing-button{
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .pricing-action{
+    padding:4px;
+  }
+
+  .pricing-title{
+    font-size: 25px;
+  }
+
+  .pricing-summary{
+    font-size: 18px;
+  }
+  
+  .pricing-list{
+    font-size: 16px;
+  }
+
+  .pricing-text{
+    font-size: 16px;
+  }
+
+  .pricing{
+    font-size: 12px;
+  }
+  
+  #contactForm{
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  .form{
+    padding-left: 5px;
+    width: 300px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content : space-between;
+    margin-bottom 50px;
+    flex-direction: column;
+  }
+
+  #myBtn{
+    display: none !important;
+  }
+  
+}
